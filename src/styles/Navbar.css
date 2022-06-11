@@ -1,0 +1,34 @@
+.Navbar-container{
+    background-color: aqua;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.logo-container{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
+.Logo{
+    color: brown;
+    cursor: pointer;
+}
+
+.Nav-list{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    list-style: none;
+    color: black;
+    font-weight: bold;
+}
+
+.Nav-list li:hover{
+    cursor: pointer;
+}

@@ -1,0 +1,19 @@
+.product-detail-container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 60%;
+}
+
+.product-detail-container img{
+    height: 500px;
+}
+
+.product-detail-container button{
+    height: 50px;
+    width: 150px;
+    margin: auto;
+    background-color: rgb(197, 78, 78);
+    color: black;
+
+}
