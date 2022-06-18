@@ -1,4 +1,6 @@
 import { Link } from "react-router-dom"
+import { useContext } from "react"
+import { Context } from '../../'
 
 const Item = ({ id, name, img, price }) => {
     return(
