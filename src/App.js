@@ -12,21 +12,24 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailsContainer';
 import { BrowserRouter, Routes, Route} from 'react-router-dom'
 import { CartProvider } from './context/CartContext'
+import { NotificationProvider } from './notification/Notification'
 
 function App() {
   return (
-    <div className="App">
-      <CartProvider>
-        <BrowserRouter>
-          <NavBar />
-          <Routes>
-            <Route path='/' element={<ItemListContainer greetings='El E-Commerce esta en contrucción 😎'/>} />
-            <Route path='/category/:categoryId' element={<ItemListContainer />} />
-            <Route path='/detail/:productId' element={<ItemDetailContainer />} />
-            <Route path='/cart' element={<h1>CART</h1>} />
-          </Routes>
-        </BrowserRouter>
-      </CartProvider>
+    <div className="App" >
+      <NotificationProvider>
+        <CartProvider>
+          <BrowserRouter>
+            <NavBar/>
+            <Routes>
+              <Route path='/' element={<ItemListContainer />} />
+              <Route path='/category/:categoryId' element={<ItemListContainer />} />
+              <Route path='/detail/:productId' element={<ItemDetailContainer />} />
+              <Route path='/cart' element={<h1>CART</h1>} />
+            </Routes>
+          </BrowserRouter>
+        </CartProvider>
+      </NotificationProvider>
     </div>
   );
 }

@@ -8,6 +8,7 @@ const CartWidget = () => {
 
     return(
         <div className="CartWidget">
+            <img src="/images/cart.svg" alt='cart' className='CartImg'/>
             <NavLink to='/cart'>Carrito</NavLink>
             {  totalQuantity }
         </div>
